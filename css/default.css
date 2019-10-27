@@ -1,0 +1,14 @@
+/* TODO: make backround black change font and change color to white, center all components */
+
+    body
+    {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        background: black;
+        text-align: center;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 22px;
+        font-weight: 300;
+        color: white;
+    }
