@@ -92,7 +92,7 @@ PIXI.loader
 function ready() {
   createjs.Ticker.setFPS(60);
   var tu = new TileUtilities(PIXI);
-  world = tu.makeTiledWorld("map.json", "mapTileSet.png");
+  world = tu.makeTiledWorld("map.json", "mapTileSet.tsx");
   stage.addChild(world);
 
   player = new PIXI.Sprite(PIXI.loader.resources["player.png"].texture);
@@ -107,7 +107,7 @@ function ready() {
   var entities = world.getObject("Entities");
   entities.addChild(player);
 
-  water = world.getObject("Water").data;
+  water = world.getObject("water").data;
 
   player.direction = MOVE_NONE;
   player.moving = false;
